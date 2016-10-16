@@ -1,3 +1,12 @@
+### NOTE:
+This code allows mini-batch greater than 1, not provided in original py-faster-rcnn implementation. Code has been validated to perform as expected (ToConcoctPellucid @ <a href="http://image-net.org/challenges/LSVRC/2016/results">ILSVRC16</a>). <br/>
+ImageNet images are scaled to 480x480 and allows mini-batch = 4 with ResNet-50 on Nvidia Titan X (12 GB). <br/>
+Same cannot be done for COCO, **why?** because COCO dataset has really small objects and a higher resolution is required. <br/>
+Check this <a href="https://github.com/ice-pice/py-faster-rcnn/commit/ba79966644a119ed9ed1bf8a6cacb57ae47ed70d">commit</a> for necessary changes and let me know for improvements. <br/>
+.. ice-pice
+<br/> <br/> <br/>
+##OLDER README
+
 Hope this tutorial will help you a lot! and I appreciate that you can **star** it!   
 # Training Faster RCNN on Imagenet
 
